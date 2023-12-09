@@ -25,7 +25,7 @@ body {
 img {
   max-width: 50%;
   height: 540px;
-  border-radius: 2reml;
+  border-radius: 2rem;
   object-fit: contain;
 }
 
