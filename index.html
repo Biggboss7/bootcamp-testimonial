@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS Link -->
+    <script src="script.js" defer></script>
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="png"
+      size="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Website Title -->
+    <title>Bootcamp Testimonial || Frontend Mentor Challenge</title>
+  </head>
+  <body>
+    <div class="btn__wrapper">
+      <div id="previousBtn" class="btn btn--left">
+        <svg
+          class="icon--prev"
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="18"
+        >
+          <path
+            fill="none"
+            stroke="#8585AC"
+            stroke-width="3"
+            d="M11 1L3 9l8 8"
+          />
+        </svg>
+      </div>
+      <div id="nextBtn" class="btn btn--right">
+        <svg
+          class="icon--next"
+          xmlns="http://www.w3.org/2000/svg"
+          width="13"
+          height="18"
+        >
+          <path
+            fill="none"
+            stroke="#8585AC"
+            stroke-width="3"
+            d="M2 1l8 8-8 8"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="slider">
+      <div id="slide1" class="slide slide--1">
+        <img
+          src="./images/image-tanya.jpg"
+          alt="a curly haired girl with white shirt"
+        />
+        <div class="wrapper">
+          <div class="slide__content">
+            <q class="testimonial">
+              I've been interested in coding for a while but never take the
+              jump, until now. I couldn't recommend this course enough. I'm now
+              in the job of my dreams and so excited about the future.
+            </q>
+            <p class="personal--details">
+              <span class="fullname">Tanya Sinclair</span>
+              <span class="job">UX Engineer</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="slide2" class="slide slide--2">
+        <img src="./images/image-john.jpg" alt="a man with blue shirt" />
+        <div class="wrapper">
+          <div class="slide__content">
+            <q class="testimonial">
+              If you want to lay the best foundation possible recommend taking
+              this course. The depth I'd recommend taking this course. The depth
+              the instructors go into is incredible. I now feel so confident
+              about starting up as a professional developer.
+            </q>
+            <p class="personal--details">
+              <span class="fullname">John Tarkpor</span>
+              <span class="job">Junior Front-end Developer</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/pattern-curve.svg") left bottom no-repeat,
+    url("./images/pattern-quotes.svg") 20% 25% no-repeat,
+    url("./images/pattern-bg.svg") right no-repeat;
+}
+
+img {
+  max-width: 50%;
+  height: 540px;
+  border-radius: 2reml;
+  object-fit: contain;
+}
+
+.testimonial {
+  font-size: clamp(1.125rem, 0.8424rem + 1.2059vw, 2rem);
+  font-weight: 300;
+  color: hsl(240, 38%, 20%);
+}
+
+.slider {
+  width: 100%;
+  height: 540px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  transition: transform 1s;
+}
+
+.wrapper {
+  width: 635px;
+  height: 354px;
+  position: relative;
+}
+
+.slide__content {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  line-height: 2.3rem;
+}
+
+.personal--details {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  line-height: 2.375rem;
+}
+
+.fullname {
+  font-weight: 700;
+}
+
+.job {
+  font-weight: 500;
+  color: hsl(240, 18%, 77%);
+}
+
+.icon {
+  position: absolute;
+}
+
+.icon--quote {
+  top: 200px;
+  left: 320px;
+}
+
+.icon--curve {
+  bottom: 0;
+  left: 0;
+}
+
+.icon--pattern {
+  right: 20px;
+  top: 70px;
+  z-index: -5;
+}
+
+.btn__wrapper {
+  width: 7rem;
+  height: 3.5rem;
+  position: absolute;
+  bottom: 109px;
+  right: 528px;
+  display: flex;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 1px -1px 15px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.btn {
+  width: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.btn--left {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.btn--right {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn:active {
+  box-shadow: 1px 1px 5px 0 inset;
+}
+
+@media only screen and (max-width: 1414px) {
+  body {
+    padding: 5.5rem;
+  }
+
+  .slide__content {
+    width: 100%;
+    top: 20px;
+  }
+
+  .testimonial {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1062px) {
+  body {
+    padding: 1.5rem;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  body {
+    padding: 2rem 1.5rem;
+    justify-content: space-around;
+    background-size: auto, 10%, 60%;
+    background-position: left bottom, 12% 60%, 50% 10%;
+  }
+
+  img {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .slider {
+    height: 710px;
+    display: flex;
+    align-items: center;
+  }
+
+  .slide {
+    flex-direction: column;
+  }
+
+  .slide__content {
+    position: static;
+    text-align: center;
+  }
+
+  .testimonial {
+    font-size: 20px;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .personal--details {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .btn__wrapper {
+    height: 2.5rem;
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  body {
+    background-size: auto, 10%, 85%;
+    background-position: left bottom, 12% 50%, 50% 10%;
+  }
+
+  img {
+    max-width: 75%;
+  }
+}
